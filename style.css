@@ -1,0 +1,45 @@
+.container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+}
+
+.item {
+    flex: 1 1 200px; 
+    margin: 10px;
+}
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column; 
+    }
+    .item {
+        margin: 5px 0; 
+    }
+}
+
+@media (min-width: 601px) {
+    .container {
+        flex-direction: row; 
+    }
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item {
+    flex: 1 1 200px;
+    background-color: green;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+    .item {
+        margin: 5px 0;
+    }
+}
